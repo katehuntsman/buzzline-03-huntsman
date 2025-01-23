@@ -1,4 +1,18 @@
-# buzzline-03-case
+# buzzline-03-huntsman
+
+# JSON Producer: 
+The 'json_producer_huntsman.py' script generates custom JSON messages, simulates dynamic sentence creation, and streams them to a Kafka topic. The messages contain random authors, statuses, and timestamps. The producer fetches configuration from environment variables, such as Kafka topic and message interval, and handles topic creation. It continuously sends these messages at specified intervals, logging all actions and handling potential errors gracefully. This ensures real-time streaming of varied, dynamically generated content.
+
+# JSON Consumer: 
+The 'json_consumer_huntsman.py' script consumes Kafka messages in real-time, processes JSON data, and performs real-time analytics. It retrieves Kafka configuration details like the topic, consumer group ID, and rolling window size from environment variables. The `process_message` function analyzes messages for specific patterns, such as process completion, failure, or urgency. It maintains a rolling window of recent messages and alerts on these patterns, logging them accordingly. The script leverages the `kafka-python` package to consume messages and uses the `dotenv` library to load environment variables.
+
+# CSV Producer: 
+The 'csv_producer_huntsman.py' script reads temperature data from a CSV file, formats each record with a timestamp, and sends it to a Kafka topic in real-time. It uses environment variables to configure the Kafka topic and message intervals, and integrates utilities for setting up the Kafka producer and creating the topic. The script streams data continuously, sending messages at specified intervals while ensuring proper error handling and logging.
+
+# CSV Consumer:
+The 'csv_consumer_huntsman.py' script consumes messages from a Kafka topic, processes temperature data from JSON-formatted messages, and detects specific patterns. It identifies extreme temperature fluctuations (over 100°F between consecutive messages), low temperatures (e.g., below freezing), and temperature stalls (minimal variation over several readings). The consumer uses a rolling window of recent temperature readings to monitor these conditions in real-time, logging alerts when any of these patterns are detected.
+
+
 
 Streaming data does not have to be simple text.
 Many of us are familiar with streaming video content and audio (e.g. music) files. 
@@ -43,17 +57,10 @@ See instructions at [SETUP-KAFKA.md] to:
 In VS Code, open a terminal.
 Use the commands below to activate .venv, and start the producer. 
 
-Windows:
-
-```shell
-.venv\Scripts\activate
-py -m producers.json_producer_case
-```
-
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.json_producer_case
+python3 -m producers.json_producer_huntsman
 ```
 
 What did we name the topic used with JSON data? 
@@ -66,16 +73,10 @@ Consumers process streaming data in real time.
 In VS Code, open a NEW terminal in your root project folder. 
 Use the commands below to activate .venv, and start the consumer. 
 
-Windows:
-```shell
-.venv\Scripts\activate
-py -m consumers.json_consumer_case
-```
-
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.json_consumer_case
+python3 -m consumers.json_consumer_huntsman
 ```
 
 What did we name the topic used with JSON data? 
@@ -94,6 +95,12 @@ You will need to:
 What did we name the topic used with csv data? 
 Hint: See the producer code and [.env](.env).
 
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m producers.csv_producer_huntsman
+```
+
 ## Task 8. Start a CSV Consumer
 
 Follow a similar process to start the csv consumer. 
@@ -106,6 +113,12 @@ You will need to:
 
 What did we name the topic used with csv data? 
 Hint: See the consumer code and [.env](.env).
+
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m consumer.csv_consumer_huntsman
+```
 
 ## About the Smart Smoker (CSV Example)
 
