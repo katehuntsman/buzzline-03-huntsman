@@ -1,0 +1,622 @@
+2025-01-23 13:26:59.733 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-23 13:26:59.734 | INFO     | __main__:main:192 - START consumer.
+2025-01-23 13:26:59.734 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: smoker_csv
+2025-01-23 13:26:59.734 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: smoker_group
+2025-01-23 13:26:59.734 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:26:59.734 | INFO     | __main__:main:198 - Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-01-23 13:26:59.734 | INFO     | __main__:main:199 - Rolling window size: 10
+2025-01-23 13:26:59.734 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-23 13:26:59.734 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-01-23 13:26:59.846 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-01-23 13:26:59.846 | INFO     | __main__:main:208 - Polling messages from topic 'smoker_csv'...
+2025-01-23 13:27:00.071 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-20T22:34:52.819474', 'temperature': 106.0}
+2025-01-23 13:27:00.071 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.072 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-20T22:34:52.819474", "temperature": 106.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.072 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:14:29.265170', 'temperature': 70.4}
+2025-01-23 13:27:00.072 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.072 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:14:29.265170", "temperature": 70.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.072 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:14:34.270901', 'temperature': 70.8}
+2025-01-23 13:27:00.072 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.072 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:14:34.270901", "temperature": 70.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.073 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:14:39.276534', 'temperature': 71.2}
+2025-01-23 13:27:00.073 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.073 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:14:39.276534", "temperature": 71.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.073 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:14:44.278226', 'temperature': 71.6}
+2025-01-23 13:27:00.073 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.073 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:14:44.278226", "temperature": 71.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.073 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:14:49.283727', 'temperature': 72.0}
+2025-01-23 13:27:00.073 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.073 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:14:49.283727", "temperature": 72.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.073 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:14:54.289287', 'temperature': 72.4}
+2025-01-23 13:27:00.073 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.074 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:14:54.289287", "temperature": 72.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.074 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:14:59.294953', 'temperature': 72.8}
+2025-01-23 13:27:00.074 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.074 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:14:59.294953", "temperature": 72.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.074 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:04.296459', 'temperature': 73.2}
+2025-01-23 13:27:00.074 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.074 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:04.296459", "temperature": 73.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.074 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:09.302105', 'temperature': 73.6}
+2025-01-23 13:27:00.074 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.074 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.074 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:09.302105", "temperature": 73.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.074 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:14.304661', 'temperature': 74.0}
+2025-01-23 13:27:00.074 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.075 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.075 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:14.304661", "temperature": 74.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.075 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:19.310247', 'temperature': 74.4}
+2025-01-23 13:27:00.075 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.075 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.075 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:19.310247", "temperature": 74.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.075 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:24.315511', 'temperature': 74.8}
+2025-01-23 13:27:00.075 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.075 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.075 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:24.315511", "temperature": 74.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.075 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:29.321153', 'temperature': 75.2}
+2025-01-23 13:27:00.075 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.075 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.075 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:29.321153", "temperature": 75.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.075 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:34.326788', 'temperature': 75.6}
+2025-01-23 13:27:00.075 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.075 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.076 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:34.326788", "temperature": 75.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.077 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:39.331996', 'temperature': 76.0}
+2025-01-23 13:27:00.077 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.077 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.077 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:39.331996", "temperature": 76.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.078 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:44.337607', 'temperature': 76.4}
+2025-01-23 13:27:00.078 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.078 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.078 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:44.337607", "temperature": 76.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.078 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:49.343432', 'temperature': 76.8}
+2025-01-23 13:27:00.078 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.078 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.079 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:49.343432", "temperature": 76.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.079 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:54.345967', 'temperature': 77.2}
+2025-01-23 13:27:00.079 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.079 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.079 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:54.345967", "temperature": 77.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.079 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:15:59.351635', 'temperature': 77.6}
+2025-01-23 13:27:00.079 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.079 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.079 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:15:59.351635", "temperature": 77.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.079 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:04.357239', 'temperature': 78.0}
+2025-01-23 13:27:00.079 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.079 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.093 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:04.357239", "temperature": 78.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.093 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:09.362830', 'temperature': 78.4}
+2025-01-23 13:27:00.093 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.093 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.094 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:09.362830", "temperature": 78.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.114 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:14.368564', 'temperature': 78.8}
+2025-01-23 13:27:00.115 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.115 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.115 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:14.368564", "temperature": 78.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.115 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:19.370565', 'temperature': 79.2}
+2025-01-23 13:27:00.116 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.116 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.116 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:19.370565", "temperature": 79.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.116 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:24.376184', 'temperature': 79.6}
+2025-01-23 13:27:00.116 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.116 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.116 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:24.376184", "temperature": 79.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.116 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:29.381411', 'temperature': 80.0}
+2025-01-23 13:27:00.116 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.116 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.116 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:29.381411", "temperature": 80.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.117 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:34.387094', 'temperature': 80.4}
+2025-01-23 13:27:00.117 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.117 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.117 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:34.387094", "temperature": 80.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.117 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:39.392857', 'temperature': 80.8}
+2025-01-23 13:27:00.117 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.117 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.117 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:39.392857", "temperature": 80.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.117 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:44.396820', 'temperature': 81.2}
+2025-01-23 13:27:00.117 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.117 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.117 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:44.396820", "temperature": 81.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.117 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:49.402213', 'temperature': 81.6}
+2025-01-23 13:27:00.117 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.117 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.117 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:49.402213", "temperature": 81.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.117 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:54.407932', 'temperature': 82.0}
+2025-01-23 13:27:00.118 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.118 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.118 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:54.407932", "temperature": 82.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.118 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:16:59.413624', 'temperature': 82.4}
+2025-01-23 13:27:00.118 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.118 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.118 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:16:59.413624", "temperature": 82.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.118 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:04.419328', 'temperature': 82.8}
+2025-01-23 13:27:00.118 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.118 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.118 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:04.419328", "temperature": 82.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.118 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:09.425045', 'temperature': 83.2}
+2025-01-23 13:27:00.118 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.118 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.118 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:09.425045", "temperature": 83.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.118 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:14.427919', 'temperature': 83.6}
+2025-01-23 13:27:00.118 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.118 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.118 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:14.427919", "temperature": 83.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.118 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:19.433799', 'temperature': 84.0}
+2025-01-23 13:27:00.119 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.119 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.119 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:19.433799", "temperature": 84.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.119 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:24.439700', 'temperature': 84.4}
+2025-01-23 13:27:00.119 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.119 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.119 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:24.439700", "temperature": 84.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.119 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:29.445352', 'temperature': 84.8}
+2025-01-23 13:27:00.119 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.119 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.119 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:29.445352", "temperature": 84.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.119 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:34.450748', 'temperature': 85.2}
+2025-01-23 13:27:00.119 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.119 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.119 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:34.450748", "temperature": 85.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.119 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:39.456166', 'temperature': 85.6}
+2025-01-23 13:27:00.119 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.119 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.119 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:39.456166", "temperature": 85.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.119 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:44.462397', 'temperature': 86.0}
+2025-01-23 13:27:00.119 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.119 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.119 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:44.462397", "temperature": 86.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.119 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:49.466612', 'temperature': 86.4}
+2025-01-23 13:27:00.119 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.119 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.119 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:49.466612", "temperature": 86.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.119 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:54.472468', 'temperature': 86.8}
+2025-01-23 13:27:00.120 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.120 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.120 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:54.472468", "temperature": 86.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.123 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:17:59.477890', 'temperature': 87.2}
+2025-01-23 13:27:00.123 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.123 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.123 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:17:59.477890", "temperature": 87.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.123 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:04.479200', 'temperature': 87.6}
+2025-01-23 13:27:00.124 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.124 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.124 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:04.479200", "temperature": 87.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.126 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:09.485063', 'temperature': 88.0}
+2025-01-23 13:27:00.126 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.126 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.127 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:09.485063", "temperature": 88.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.127 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:14.485947', 'temperature': 88.4}
+2025-01-23 13:27:00.127 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.127 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.127 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:14.485947", "temperature": 88.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.127 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:19.491731', 'temperature': 88.8}
+2025-01-23 13:27:00.127 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.127 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.128 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:19.491731", "temperature": 88.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.128 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:24.497285', 'temperature': 89.2}
+2025-01-23 13:27:00.128 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.128 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.128 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:24.497285", "temperature": 89.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.128 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:29.503098', 'temperature': 89.6}
+2025-01-23 13:27:00.128 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.128 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.128 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:29.503098", "temperature": 89.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.128 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:34.509047', 'temperature': 90.0}
+2025-01-23 13:27:00.128 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.128 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.128 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:34.509047", "temperature": 90.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.128 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:39.514821', 'temperature': 90.4}
+2025-01-23 13:27:00.128 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.128 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.128 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:39.514821", "temperature": 90.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.128 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:44.520680', 'temperature': 90.8}
+2025-01-23 13:27:00.128 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.128 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.128 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:44.520680", "temperature": 90.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.128 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:49.526235', 'temperature': 91.2}
+2025-01-23 13:27:00.129 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.129 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.129 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:49.526235", "temperature": 91.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.129 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:54.528755', 'temperature': 91.6}
+2025-01-23 13:27:00.129 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.129 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.129 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:54.528755", "temperature": 91.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.129 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:18:59.535108', 'temperature': 92.0}
+2025-01-23 13:27:00.129 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.129 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.129 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:18:59.535108", "temperature": 92.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.129 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:04.540758', 'temperature': 92.4}
+2025-01-23 13:27:00.129 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.129 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.129 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:04.540758", "temperature": 92.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.129 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:09.545018', 'temperature': 92.8}
+2025-01-23 13:27:00.129 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.129 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.129 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:09.545018", "temperature": 92.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.130 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:14.551210', 'temperature': 93.2}
+2025-01-23 13:27:00.130 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.130 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.130 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:14.551210", "temperature": 93.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.130 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:19.555999', 'temperature': 93.6}
+2025-01-23 13:27:00.130 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.130 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.130 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:19.555999", "temperature": 93.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.130 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:24.562183', 'temperature': 94.0}
+2025-01-23 13:27:00.130 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.130 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.130 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:24.562183", "temperature": 94.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.130 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:29.569105', 'temperature': 94.4}
+2025-01-23 13:27:00.130 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.130 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.130 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:29.569105", "temperature": 94.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.130 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:34.572550', 'temperature': 94.8}
+2025-01-23 13:27:00.130 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.130 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.130 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:34.572550", "temperature": 94.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.130 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:39.578115', 'temperature': 95.2}
+2025-01-23 13:27:00.130 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.130 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.130 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:39.578115", "temperature": 95.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.130 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:44.583911', 'temperature': 95.6}
+2025-01-23 13:27:00.130 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.131 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.131 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:44.583911", "temperature": 95.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.131 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:49.588182', 'temperature': 96.0}
+2025-01-23 13:27:00.131 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.131 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.131 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:49.588182", "temperature": 96.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.131 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:54.593503', 'temperature': 96.4}
+2025-01-23 13:27:00.131 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.131 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.131 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:54.593503", "temperature": 96.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.131 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:19:59.595526', 'temperature': 96.8}
+2025-01-23 13:27:00.131 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.131 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.131 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:19:59.595526", "temperature": 96.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.131 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:04.600261', 'temperature': 97.2}
+2025-01-23 13:27:00.131 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.131 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.131 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:04.600261", "temperature": 97.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.131 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:09.607931', 'temperature': 97.6}
+2025-01-23 13:27:00.131 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.131 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.131 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:09.607931", "temperature": 97.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.131 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:14.614966', 'temperature': 98.0}
+2025-01-23 13:27:00.131 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.131 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.131 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:14.614966", "temperature": 98.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.131 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:19.625258', 'temperature': 98.4}
+2025-01-23 13:27:00.132 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.132 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.132 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:19.625258", "temperature": 98.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.132 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:24.636029', 'temperature': 98.8}
+2025-01-23 13:27:00.132 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.132 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.132 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:24.636029", "temperature": 98.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.133 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:29.645291', 'temperature': 99.2}
+2025-01-23 13:27:00.133 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.133 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.133 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:29.645291", "temperature": 99.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.133 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:34.652377', 'temperature': 99.6}
+2025-01-23 13:27:00.133 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.133 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.133 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:34.652377", "temperature": 99.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.133 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:39.660952', 'temperature': 100.0}
+2025-01-23 13:27:00.133 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.133 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.134 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:39.660952", "temperature": 100.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.134 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:44.666042', 'temperature': 100.4}
+2025-01-23 13:27:00.134 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.134 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.134 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:44.666042", "temperature": 100.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.134 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:49.671445', 'temperature': 100.8}
+2025-01-23 13:27:00.134 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.134 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.134 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:49.671445", "temperature": 100.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.134 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:54.679359', 'temperature': 101.2}
+2025-01-23 13:27:00.134 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.134 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.134 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:54.679359", "temperature": 101.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.134 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:20:59.687193', 'temperature': 101.6}
+2025-01-23 13:27:00.134 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.134 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.134 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:20:59.687193", "temperature": 101.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.134 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:04.688518', 'temperature': 102.0}
+2025-01-23 13:27:00.134 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.134 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.134 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:04.688518", "temperature": 102.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.134 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:09.696029', 'temperature': 102.4}
+2025-01-23 13:27:00.134 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.134 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.135 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:09.696029", "temperature": 102.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.135 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:14.699602', 'temperature': 102.8}
+2025-01-23 13:27:00.135 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.135 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:14.699602", "temperature": 102.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.135 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:19.706004', 'temperature': 103.2}
+2025-01-23 13:27:00.135 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.135 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:19.706004", "temperature": 103.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.135 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:24.713449', 'temperature': 103.6}
+2025-01-23 13:27:00.135 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.135 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:24.713449", "temperature": 103.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.135 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:29.721010', 'temperature': 104.0}
+2025-01-23 13:27:00.135 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.135 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:29.721010", "temperature": 104.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.135 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:34.728365', 'temperature': 104.4}
+2025-01-23 13:27:00.135 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.135 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:34.728365", "temperature": 104.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.135 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:39.732928', 'temperature': 104.8}
+2025-01-23 13:27:00.135 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.135 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:39.732928", "temperature": 104.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.135 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:44.740416', 'temperature': 105.2}
+2025-01-23 13:27:00.135 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.136 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:44.740416", "temperature": 105.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.136 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:49.744129', 'temperature': 105.6}
+2025-01-23 13:27:00.136 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.136 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.136 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:49.744129", "temperature": 105.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.136 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:54.751632', 'temperature': 106.0}
+2025-01-23 13:27:00.136 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.136 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.136 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:54.751632", "temperature": 106.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.136 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:21:59.759088', 'temperature': 106.4}
+2025-01-23 13:27:00.136 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.136 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.136 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:21:59.759088", "temperature": 106.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.136 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:04.766344', 'temperature': 106.8}
+2025-01-23 13:27:00.136 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.136 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.136 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:04.766344", "temperature": 106.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.136 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:09.772876', 'temperature': 107.2}
+2025-01-23 13:27:00.136 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.136 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.136 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:09.772876", "temperature": 107.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.136 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:14.777122', 'temperature': 107.6}
+2025-01-23 13:27:00.136 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.136 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.137 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:14.777122", "temperature": 107.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.137 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:19.784444', 'temperature': 108.0}
+2025-01-23 13:27:00.137 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.137 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.137 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:19.784444", "temperature": 108.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.137 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:24.791895', 'temperature': 108.4}
+2025-01-23 13:27:00.137 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.137 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.138 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:24.791895", "temperature": 108.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.138 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:29.795060', 'temperature': 108.8}
+2025-01-23 13:27:00.138 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.138 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.138 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:29.795060", "temperature": 108.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.139 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:34.802242', 'temperature': 109.2}
+2025-01-23 13:27:00.139 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.139 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.139 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:34.802242", "temperature": 109.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.139 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:39.808337', 'temperature': 109.6}
+2025-01-23 13:27:00.139 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.139 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.139 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:39.808337", "temperature": 109.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.139 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:44.813694', 'temperature': 110.0}
+2025-01-23 13:27:00.139 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.139 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.139 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:44.813694", "temperature": 110.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.139 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:49.819638', 'temperature': 110.4}
+2025-01-23 13:27:00.139 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.139 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.139 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:49.819638", "temperature": 110.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.139 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:54.825429', 'temperature': 110.8}
+2025-01-23 13:27:00.139 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.139 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.139 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:54.825429", "temperature": 110.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.139 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:22:59.832289', 'temperature': 111.2}
+2025-01-23 13:27:00.139 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.139 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.139 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:22:59.832289", "temperature": 111.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.139 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:04.839426', 'temperature': 111.6}
+2025-01-23 13:27:00.139 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.139 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.139 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:04.839426", "temperature": 111.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.139 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:09.841401', 'temperature': 112.0}
+2025-01-23 13:27:00.139 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.139 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.139 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:09.841401", "temperature": 112.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.140 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:14.847053', 'temperature': 112.4}
+2025-01-23 13:27:00.140 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.140 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.140 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:14.847053", "temperature": 112.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.140 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:19.850936', 'temperature': 112.8}
+2025-01-23 13:27:00.140 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.140 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.140 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:19.850936", "temperature": 112.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.140 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:24.852888', 'temperature': 113.2}
+2025-01-23 13:27:00.140 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.140 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.140 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:24.852888", "temperature": 113.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.140 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:29.855436', 'temperature': 113.6}
+2025-01-23 13:27:00.140 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.140 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.140 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:29.855436", "temperature": 113.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.140 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:34.862253', 'temperature': 114.0}
+2025-01-23 13:27:00.140 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.140 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.140 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:34.862253", "temperature": 114.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.140 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:39.869537', 'temperature': 114.4}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:39.869537", "temperature": 114.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.141 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:44.876850', 'temperature': 114.8}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:44.876850", "temperature": 114.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.141 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:49.883036', 'temperature': 115.2}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:49.883036", "temperature": 115.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.141 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:54.890457', 'temperature': 115.6}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:54.890457", "temperature": 115.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.141 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:23:59.897834', 'temperature': 116.0}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:23:59.897834", "temperature": 116.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.141 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:04.905065', 'temperature': 116.4}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:04.905065", "temperature": 116.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.141 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:09.911816', 'temperature': 116.8}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:09.911816", "temperature": 116.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.141 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:14.916662', 'temperature': 117.2}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:14.916662", "temperature": 117.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.141 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:19.922376', 'temperature': 117.6}
+2025-01-23 13:27:00.141 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.141 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.141 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:19.922376", "temperature": 117.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.142 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:24.926834', 'temperature': 118.0}
+2025-01-23 13:27:00.142 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.142 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.142 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:24.926834", "temperature": 118.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.142 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:29.933940', 'temperature': 118.4}
+2025-01-23 13:27:00.143 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.143 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.143 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:29.933940", "temperature": 118.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.143 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:34.937222', 'temperature': 118.8}
+2025-01-23 13:27:00.143 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.143 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.143 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:34.937222", "temperature": 118.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.143 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:39.944679', 'temperature': 119.2}
+2025-01-23 13:27:00.143 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.143 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.143 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:39.944679", "temperature": 119.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.143 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:44.947183', 'temperature': 119.6}
+2025-01-23 13:27:00.143 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.143 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.143 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:44.947183", "temperature": 119.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.144 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:49.953366', 'temperature': 120.0}
+2025-01-23 13:27:00.144 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.144 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.144 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:49.953366", "temperature": 120.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.144 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:54.958063', 'temperature': 120.4}
+2025-01-23 13:27:00.144 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.144 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.144 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:54.958063", "temperature": 120.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.144 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:24:59.963701', 'temperature': 120.8}
+2025-01-23 13:27:00.144 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.144 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.144 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:24:59.963701", "temperature": 120.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.144 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:04.968021', 'temperature': 121.2}
+2025-01-23 13:27:00.144 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.144 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.144 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:04.968021", "temperature": 121.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.144 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:09.975413', 'temperature': 121.6}
+2025-01-23 13:27:00.144 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.144 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.144 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:09.975413", "temperature": 121.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.144 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:14.982500', 'temperature': 122.0}
+2025-01-23 13:27:00.144 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.144 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.144 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:14.982500", "temperature": 122.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.144 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:19.988172', 'temperature': 122.4}
+2025-01-23 13:27:00.144 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:19.988172", "temperature": 122.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:24.991528', 'temperature': 122.8}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:24.991528", "temperature": 122.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:29.997780', 'temperature': 123.2}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:29.997780", "temperature": 123.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:35.003313', 'temperature': 123.6}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:35.003313", "temperature": 123.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:40.010717', 'temperature': 124.0}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:40.010717", "temperature": 124.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:45.014614', 'temperature': 124.4}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:45.014614", "temperature": 124.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:50.018913', 'temperature': 124.8}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:50.018913", "temperature": 124.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:25:55.021003', 'temperature': 125.2}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:25:55.021003", "temperature": 125.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:00.026748', 'temperature': 125.6}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.145 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:00.026748", "temperature": 125.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.145 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:05.029098', 'temperature': 126.0}
+2025-01-23 13:27:00.145 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.145 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:05.029098", "temperature": 126.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:10.033089', 'temperature': 126.4}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:10.033089", "temperature": 126.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:15.036954', 'temperature': 126.8}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:15.036954", "temperature": 126.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:20.039140', 'temperature': 127.2}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:20.039140", "temperature": 127.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:25.042883', 'temperature': 127.6}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:25.042883", "temperature": 127.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:30.050099', 'temperature': 128.0}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:30.050099", "temperature": 128.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:35.051294', 'temperature': 128.4}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:35.051294", "temperature": 128.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:40.055810', 'temperature': 128.8}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:40.055810", "temperature": 128.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:45.060795', 'temperature': 129.2}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:45.060795", "temperature": 129.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.146 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:50.064130', 'temperature': 129.6}
+2025-01-23 13:27:00.146 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.146 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.146 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:50.064130", "temperature": 129.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.147 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:26:55.065251', 'temperature': 130.0}
+2025-01-23 13:27:00.147 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.147 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.147 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:26:55.065251", "temperature": 130.0}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:00.149 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:27:00.070843', 'temperature': 130.4}
+2025-01-23 13:27:00.149 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:00.149 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:00.149 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:27:00.070843", "temperature": 130.4}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:05.081 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:27:05.077183', 'temperature': 130.8}
+2025-01-23 13:27:05.082 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:05.082 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:05.082 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:27:05.077183", "temperature": 130.8}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:10.089 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:27:10.084681', 'temperature': 131.2}
+2025-01-23 13:27:10.089 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:10.089 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:10.089 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:27:10.084681", "temperature": 131.2}': unsupported operand type(s) for -: 'float' and 'NoneType'
+2025-01-23 13:27:15.095 | INFO     | __main__:process_message:148 - Processed JSON message: {'timestamp': '2025-01-23T19:27:15.090772', 'temperature': 131.6}
+2025-01-23 13:27:15.096 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-23 13:27:15.096 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-23 13:27:15.096 | ERROR    | __main__:process_message:177 - Error processing message '{"timestamp": "2025-01-23T19:27:15.090772", "temperature": 131.6}': unsupported operand type(s) for -: 'float' and 'NoneType'
