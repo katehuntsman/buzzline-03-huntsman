@@ -29,7 +29,7 @@ def generate_messages():
     Yield custom JSON message with dynamic sentences continuously.
     """
     message_id = 1
-    authors = ["Alice", "Joe", "Charlie", "Kate"]
+    authors = ["Bri", "Ryan", "Kenny", "Kate"]
     statuses = ["active", "inactive", "pending", "completed"]
     
     while True:
