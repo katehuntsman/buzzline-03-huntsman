@@ -3338,3 +3338,309 @@
 2025-01-20 16:34:52.824 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
 2025-01-20 16:34:57.827 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-20T22:34:57.826151', 'temperature': 106.4}
 2025-01-20 16:35:02.833 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-20T22:35:02.832452', 'temperature': 106.8}
+2025-01-23 12:32:55.990 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-23 12:32:55.991 | INFO     | __main__:<module>:68 - Project root: /Users/katehuntsman/Documents/Streaming Data/buzzline-03-huntsman
+2025-01-23 12:32:55.991 | INFO     | __main__:<module>:72 - Data folder: /Users/katehuntsman/Documents/Streaming Data/buzzline-03-huntsman/data
+2025-01-23 12:32:55.991 | INFO     | __main__:<module>:76 - Data file: /Users/katehuntsman/Documents/Streaming Data/buzzline-03-huntsman/data/buzz.json
+2025-01-23 12:32:55.991 | INFO     | __main__:main:136 - START producer.
+2025-01-23 12:32:55.991 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-23 12:32:55.994 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-23 12:32:55.994 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-23 12:32:56.367 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'UFjPXPBMQymKwznMON05nA', 'controller_id': 0}
+2025-01-23 12:32:56.368 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-23 12:32:56.368 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-23 12:32:56.368 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-23 12:32:56.368 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-23 12:32:56.485 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-23 12:32:56.486 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-23 12:32:56.830 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-01-23 12:32:56.831 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-23 12:32:57.184 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-01-23 12:32:57.184 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-01-23 12:32:57.184 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-01-23 12:32:57.184 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: /Users/katehuntsman/Documents/Streaming Data/buzzline-03-huntsman/data/buzz.json
+2025-01-23 12:32:57.185 | INFO     | __main__:generate_messages:97 - Reading data from file: /Users/katehuntsman/Documents/Streaming Data/buzzline-03-huntsman/data/buzz.json
+2025-01-23 12:32:57.185 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-23 12:32:58.191 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-01-23 12:32:59.196 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-23 12:33:00.203 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-23 12:33:01.210 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-23 12:33:02.214 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-23 12:33:03.219 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-23 12:33:04.221 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-23 12:33:05.228 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-23 12:33:06.234 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-23 12:33:07.241 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-23 12:33:08.247 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-23 12:33:09.249 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-01-23 12:33:10.254 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-23 12:33:11.260 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-23 12:33:12.266 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-23 12:33:13.268 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-23 12:33:14.275 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-23 12:33:15.282 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-23 12:33:16.288 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-23 12:33:17.294 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-23 12:33:18.301 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-23 12:33:19.305 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-23 12:33:20.309 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-23 12:33:21.314 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-23 12:33:22.320 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-23 12:33:23.327 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-23 12:33:24.330 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-23 12:33:25.336 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-01-23 12:33:26.342 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-01-23 12:33:27.348 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-01-23 12:33:28.353 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-01-23 12:33:29.359 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-23 12:33:30.367 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-23 12:33:31.374 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-01-23 12:33:32.380 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-23 12:33:33.385 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-01-23 12:33:34.389 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-01-23 12:33:35.395 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-23 12:33:36.402 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-23 12:33:37.408 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Alice'}
+2025-01-23 12:33:38.415 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-01-23 12:33:39.422 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-23 12:33:40.426 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-01-23 12:33:41.431 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-23 12:33:42.437 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-23 12:33:43.444 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-01-23 12:33:44.446 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-23 12:33:45.453 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-01-23 12:33:46.454 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-23 12:33:47.460 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-01-23 12:33:48.467 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-23 12:33:49.471 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-01-23 12:33:50.478 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-23 12:33:51.485 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-01-23 12:33:52.491 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-23 12:33:53.498 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-23 12:33:54.501 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Bob'}
+2025-01-23 12:33:55.508 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-23 12:33:56.515 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-23 12:33:57.522 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-23 12:33:58.527 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-23 12:33:59.533 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Diana'}
+2025-01-23 12:34:00.540 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Bob'}
+2025-01-23 12:34:01.547 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-23 12:34:02.552 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-01-23 12:34:03.555 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Eve'}
+2025-01-23 12:34:04.557 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-01-23 12:34:05.565 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-01-23 12:34:06.569 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-23 12:34:07.576 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-01-23 12:34:08.583 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-23 12:34:09.588 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Bob'}
+2025-01-23 12:34:10.598 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-01-23 12:34:11.600 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-01-23 12:34:12.607 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-01-23 12:34:13.614 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-01-23 12:34:14.618 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-01-23 12:34:15.621 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-01-23 12:34:16.627 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-23 12:34:17.629 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Eve'}
+2025-01-23 12:34:18.634 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-23 12:34:19.641 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-01-23 12:34:20.643 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-23 12:34:21.649 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-01-23 12:34:22.656 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-23 12:34:23.660 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-01-23 12:34:24.667 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-23 12:34:25.674 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-01-23 12:34:26.680 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-23 12:34:27.683 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-23 12:34:28.685 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-01-23 12:34:29.692 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-01-23 12:34:30.696 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Charlie'}
+2025-01-23 12:34:31.703 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-01-23 12:34:32.710 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-23 12:34:33.718 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-01-23 12:34:34.725 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-23 12:34:35.732 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-01-23 12:34:36.181 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-23 12:34:36.182 | INFO     | __main__:main:57 - START producer.
+2025-01-23 12:34:36.182 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-23 12:34:36.185 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-23 12:34:36.185 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-23 12:34:36.514 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'UFjPXPBMQymKwznMON05nA', 'controller_id': 0}
+2025-01-23 12:34:36.514 | INFO     | __main__:get_kafka_topic:18 - Kafka topic: unique_topic
+2025-01-23 12:34:36.514 | INFO     | __main__:get_message_interval:23 - Message interval: 1 seconds
+2025-01-23 12:34:36.514 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-23 12:34:36.514 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-23 12:34:36.625 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-23 12:34:36.625 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-23 12:34:36.738 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-23 12:34:36.965 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'unique_topic'.
+2025-01-23 12:34:37.068 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'unique_topic' created successfully.
+2025-01-23 12:34:37.070 | INFO     | __main__:main:72 - Kafka topic 'unique_topic' is ready.
+2025-01-23 12:34:37.070 | INFO     | __main__:main:78 - Starting message production to topic 'unique_topic'...
+2025-01-23 12:34:37.124 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 1: The process for Charlie is currently inactive.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:34:37Z', 'status': 'inactive'}
+2025-01-23 12:34:37.756 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: /Users/katehuntsman/Documents/Streaming Data/buzzline-03-huntsman/data/buzz.json
+2025-01-23 12:34:37.757 | INFO     | __main__:generate_messages:97 - Reading data from file: /Users/katehuntsman/Documents/Streaming Data/buzzline-03-huntsman/data/buzz.json
+2025-01-23 12:34:37.764 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-01-23 12:34:38.769 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-01-23 12:34:39.135 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 2: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:34:39Z', 'status': 'pending'}
+2025-01-23 12:34:39.775 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-01-23 12:34:40.779 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-01-23 12:34:41.145 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 3: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:34:41Z', 'status': 'inactive'}
+2025-01-23 12:34:41.785 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-01-23 12:34:42.792 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-01-23 12:34:43.154 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 4: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:34:43Z', 'status': 'inactive'}
+2025-01-23 12:34:43.796 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-01-23 12:34:44.803 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-01-23 12:34:45.160 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 5: The process for Charlie is currently completed.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:34:45Z', 'status': 'completed'}
+2025-01-23 12:34:45.806 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-01-23 12:34:46.813 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-01-23 12:34:47.168 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 6: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:34:47Z', 'status': 'inactive'}
+2025-01-23 12:34:49.180 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 7: The process for Joe is currently completed.', 'author': 'Joe', 'timestamp': '2025-01-23T18:34:49Z', 'status': 'completed'}
+2025-01-23 12:34:51.193 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 8: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:34:51Z', 'status': 'inactive'}
+2025-01-23 12:34:53.205 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 9: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:34:53Z', 'status': 'completed'}
+2025-01-23 12:34:55.212 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 10: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:34:55Z', 'status': 'pending'}
+2025-01-23 12:34:57.224 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 11: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:34:57Z', 'status': 'active'}
+2025-01-23 12:34:59.237 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 12: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:34:59Z', 'status': 'active'}
+2025-01-23 12:35:01.245 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 13: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:35:01Z', 'status': 'active'}
+2025-01-23 12:35:03.250 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 14: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:03Z', 'status': 'inactive'}
+2025-01-23 12:35:05.260 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 15: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:05Z', 'status': 'completed'}
+2025-01-23 12:35:07.272 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 16: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:07Z', 'status': 'active'}
+2025-01-23 12:35:09.279 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 17: The process for Charlie is currently completed.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:35:09Z', 'status': 'completed'}
+2025-01-23 12:35:11.287 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 18: The process for Charlie is currently inactive.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:35:11Z', 'status': 'inactive'}
+2025-01-23 12:35:13.310 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 19: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:35:13Z', 'status': 'pending'}
+2025-01-23 12:35:15.321 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 20: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:15Z', 'status': 'pending'}
+2025-01-23 12:35:17.329 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 21: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:17Z', 'status': 'active'}
+2025-01-23 12:35:19.339 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 22: The process for Kate is currently active.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:19Z', 'status': 'active'}
+2025-01-23 12:35:21.344 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 23: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:21Z', 'status': 'inactive'}
+2025-01-23 12:35:23.355 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 24: The process for Kate is currently active.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:23Z', 'status': 'active'}
+2025-01-23 12:35:25.367 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 25: The process for Joe is currently completed.', 'author': 'Joe', 'timestamp': '2025-01-23T18:35:25Z', 'status': 'completed'}
+2025-01-23 12:35:27.377 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 26: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:27Z', 'status': 'inactive'}
+2025-01-23 12:35:29.386 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 27: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:29Z', 'status': 'completed'}
+2025-01-23 12:35:31.398 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 28: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:31Z', 'status': 'pending'}
+2025-01-23 12:35:33.407 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 29: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:33Z', 'status': 'completed'}
+2025-01-23 12:35:35.414 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 30: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:35Z', 'status': 'inactive'}
+2025-01-23 12:35:37.422 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 31: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:35:37Z', 'status': 'inactive'}
+2025-01-23 12:35:39.430 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 32: The process for Charlie is currently pending.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:35:39Z', 'status': 'pending'}
+2025-01-23 12:35:41.440 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 33: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:41Z', 'status': 'active'}
+2025-01-23 12:35:43.452 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 34: The process for Joe is currently completed.', 'author': 'Joe', 'timestamp': '2025-01-23T18:35:43Z', 'status': 'completed'}
+2025-01-23 12:35:45.459 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 35: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:35:45Z', 'status': 'pending'}
+2025-01-23 12:35:47.471 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 36: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:47Z', 'status': 'completed'}
+2025-01-23 12:35:49.480 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 37: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:49Z', 'status': 'completed'}
+2025-01-23 12:35:51.490 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 38: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:51Z', 'status': 'pending'}
+2025-01-23 12:35:53.496 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 39: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:53Z', 'status': 'completed'}
+2025-01-23 12:35:55.507 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 40: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:35:55Z', 'status': 'completed'}
+2025-01-23 12:35:57.513 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 41: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:35:57Z', 'status': 'completed'}
+2025-01-23 12:35:59.522 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 42: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:35:59Z', 'status': 'active'}
+2025-01-23 12:36:01.534 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 43: The process for Charlie is currently active.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:36:01Z', 'status': 'active'}
+2025-01-23 12:36:03.543 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 44: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:03Z', 'status': 'active'}
+2025-01-23 12:36:05.550 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 45: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:05Z', 'status': 'inactive'}
+2025-01-23 12:36:07.554 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 46: The process for Joe is currently completed.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:07Z', 'status': 'completed'}
+2025-01-23 12:36:09.566 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 47: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:09Z', 'status': 'pending'}
+2025-01-23 12:36:11.576 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 48: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:11Z', 'status': 'completed'}
+2025-01-23 12:36:13.584 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 49: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:36:13Z', 'status': 'pending'}
+2025-01-23 12:36:15.586 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 50: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:15Z', 'status': 'active'}
+2025-01-23 12:36:17.593 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 51: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:36:17Z', 'status': 'pending'}
+2025-01-23 12:36:19.602 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 52: The process for Charlie is currently active.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:36:19Z', 'status': 'active'}
+2025-01-23 12:36:21.609 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 53: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:21Z', 'status': 'inactive'}
+2025-01-23 12:36:23.619 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 54: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:23Z', 'status': 'active'}
+2025-01-23 12:36:25.623 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 55: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:25Z', 'status': 'inactive'}
+2025-01-23 12:36:27.633 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 56: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:27Z', 'status': 'pending'}
+2025-01-23 12:36:29.645 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 57: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:29Z', 'status': 'inactive'}
+2025-01-23 12:36:31.657 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 58: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:31Z', 'status': 'pending'}
+2025-01-23 12:36:33.669 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 59: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:33Z', 'status': 'inactive'}
+2025-01-23 12:36:35.679 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 60: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:36:35Z', 'status': 'completed'}
+2025-01-23 12:36:37.690 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 61: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:36:37Z', 'status': 'inactive'}
+2025-01-23 12:36:39.701 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 62: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:39Z', 'status': 'active'}
+2025-01-23 12:36:41.713 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 63: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:41Z', 'status': 'pending'}
+2025-01-23 12:36:43.723 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 64: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:43Z', 'status': 'pending'}
+2025-01-23 12:36:45.734 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 65: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:45Z', 'status': 'inactive'}
+2025-01-23 12:36:47.738 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 66: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:47Z', 'status': 'active'}
+2025-01-23 12:36:49.750 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 67: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:49Z', 'status': 'inactive'}
+2025-01-23 12:36:51.759 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 68: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:51Z', 'status': 'inactive'}
+2025-01-23 12:36:53.768 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 69: The process for Kate is currently active.', 'author': 'Kate', 'timestamp': '2025-01-23T18:36:53Z', 'status': 'active'}
+2025-01-23 12:36:55.779 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 70: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:36:55Z', 'status': 'pending'}
+2025-01-23 12:36:57.788 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 71: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:36:57Z', 'status': 'completed'}
+2025-01-23 12:36:59.799 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 72: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:36:59Z', 'status': 'pending'}
+2025-01-23 12:37:01.807 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 73: The process for Charlie is currently active.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:37:01Z', 'status': 'active'}
+2025-01-23 12:37:03.820 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 74: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:03Z', 'status': 'inactive'}
+2025-01-23 12:37:05.832 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 75: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:05Z', 'status': 'completed'}
+2025-01-23 12:37:07.845 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 76: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:37:07Z', 'status': 'active'}
+2025-01-23 12:37:09.858 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 77: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:37:09Z', 'status': 'completed'}
+2025-01-23 12:37:11.866 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 78: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:37:11Z', 'status': 'active'}
+2025-01-23 12:37:13.877 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 79: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:37:13Z', 'status': 'inactive'}
+2025-01-23 12:37:15.884 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 80: The process for Charlie is currently completed.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:37:15Z', 'status': 'completed'}
+2025-01-23 12:37:17.892 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 81: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:37:17Z', 'status': 'pending'}
+2025-01-23 12:37:19.901 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 82: The process for Charlie is currently completed.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:37:19Z', 'status': 'completed'}
+2025-01-23 12:37:21.911 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 83: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:21Z', 'status': 'pending'}
+2025-01-23 12:37:23.917 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 84: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:37:23Z', 'status': 'inactive'}
+2025-01-23 12:37:25.926 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 85: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:25Z', 'status': 'active'}
+2025-01-23 12:37:27.937 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 86: The process for Charlie is currently inactive.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:37:27Z', 'status': 'inactive'}
+2025-01-23 12:37:29.945 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 87: The process for Charlie is currently pending.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:37:29Z', 'status': 'pending'}
+2025-01-23 12:37:31.957 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 88: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:37:31Z', 'status': 'pending'}
+2025-01-23 12:37:33.968 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 89: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:33Z', 'status': 'inactive'}
+2025-01-23 12:37:35.979 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 90: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:37:35Z', 'status': 'pending'}
+2025-01-23 12:37:37.988 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 91: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:37Z', 'status': 'inactive'}
+2025-01-23 12:37:39.997 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 92: The process for Charlie is currently pending.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:37:39Z', 'status': 'pending'}
+2025-01-23 12:37:42.006 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 93: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:37:42Z', 'status': 'pending'}
+2025-01-23 12:37:44.017 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 94: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:44Z', 'status': 'pending'}
+2025-01-23 12:37:46.023 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 95: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:37:46Z', 'status': 'inactive'}
+2025-01-23 12:37:48.035 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 96: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:48Z', 'status': 'pending'}
+2025-01-23 12:37:50.043 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 97: The process for Charlie is currently active.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:37:50Z', 'status': 'active'}
+2025-01-23 12:37:52.055 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 98: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:37:52Z', 'status': 'pending'}
+2025-01-23 12:37:54.061 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 99: The process for Charlie is currently completed.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:37:54Z', 'status': 'completed'}
+2025-01-23 12:37:56.071 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 100: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:37:56Z', 'status': 'inactive'}
+2025-01-23 12:37:58.080 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 101: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:37:58Z', 'status': 'pending'}
+2025-01-23 12:38:00.089 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 102: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:38:00Z', 'status': 'completed'}
+2025-01-23 12:38:02.100 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 103: The process for Kate is currently active.', 'author': 'Kate', 'timestamp': '2025-01-23T18:38:02Z', 'status': 'active'}
+2025-01-23 12:38:04.112 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 104: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:38:04Z', 'status': 'inactive'}
+2025-01-23 12:38:06.123 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 105: The process for Charlie is currently inactive.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:06Z', 'status': 'inactive'}
+2025-01-23 12:38:08.134 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 106: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:38:08Z', 'status': 'pending'}
+2025-01-23 12:38:10.141 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 107: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:38:10Z', 'status': 'inactive'}
+2025-01-23 12:38:12.151 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 108: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:38:12Z', 'status': 'pending'}
+2025-01-23 12:38:14.158 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 109: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:38:14Z', 'status': 'pending'}
+2025-01-23 12:38:16.169 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 110: The process for Kate is currently active.', 'author': 'Kate', 'timestamp': '2025-01-23T18:38:16Z', 'status': 'active'}
+2025-01-23 12:38:18.175 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 111: The process for Charlie is currently completed.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:18Z', 'status': 'completed'}
+2025-01-23 12:38:20.185 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 112: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:38:20Z', 'status': 'active'}
+2025-01-23 12:38:22.195 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 113: The process for Charlie is currently inactive.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:22Z', 'status': 'inactive'}
+2025-01-23 12:38:24.207 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 114: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:38:24Z', 'status': 'active'}
+2025-01-23 12:38:26.216 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 115: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:38:26Z', 'status': 'inactive'}
+2025-01-23 12:38:28.227 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 116: The process for Charlie is currently active.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:28Z', 'status': 'active'}
+2025-01-23 12:38:30.236 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 117: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:38:30Z', 'status': 'inactive'}
+2025-01-23 12:38:32.250 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 118: The process for Charlie is currently active.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:32Z', 'status': 'active'}
+2025-01-23 12:38:34.263 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 119: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:38:34Z', 'status': 'active'}
+2025-01-23 12:38:36.268 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 120: The process for Joe is currently pending.', 'author': 'Joe', 'timestamp': '2025-01-23T18:38:36Z', 'status': 'pending'}
+2025-01-23 12:38:38.277 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 121: The process for Charlie is currently completed.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:38Z', 'status': 'completed'}
+2025-01-23 12:38:40.287 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 122: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:38:40Z', 'status': 'pending'}
+2025-01-23 12:38:42.295 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 123: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:38:42Z', 'status': 'completed'}
+2025-01-23 12:38:44.307 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 124: The process for Charlie is currently pending.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:44Z', 'status': 'pending'}
+2025-01-23 12:38:46.318 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 125: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:38:46Z', 'status': 'completed'}
+2025-01-23 12:38:48.331 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 126: The process for Charlie is currently completed.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:48Z', 'status': 'completed'}
+2025-01-23 12:38:50.334 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 127: The process for Charlie is currently inactive.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:38:50Z', 'status': 'inactive'}
+2025-01-23 12:38:52.346 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 128: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:38:52Z', 'status': 'pending'}
+2025-01-23 12:38:54.356 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 129: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:38:54Z', 'status': 'active'}
+2025-01-23 12:38:56.364 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 130: The process for Joe is currently completed.', 'author': 'Joe', 'timestamp': '2025-01-23T18:38:56Z', 'status': 'completed'}
+2025-01-23 12:38:58.376 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 131: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:38:58Z', 'status': 'inactive'}
+2025-01-23 12:39:00.388 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 132: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:00Z', 'status': 'completed'}
+2025-01-23 12:39:02.400 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 133: The process for Charlie is currently pending.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:39:02Z', 'status': 'pending'}
+2025-01-23 12:39:04.412 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 134: The process for Kate is currently active.', 'author': 'Kate', 'timestamp': '2025-01-23T18:39:04Z', 'status': 'active'}
+2025-01-23 12:39:06.422 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 135: The process for Charlie is currently pending.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:39:06Z', 'status': 'pending'}
+2025-01-23 12:39:08.430 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 136: The process for Kate is currently inactive.', 'author': 'Kate', 'timestamp': '2025-01-23T18:39:08Z', 'status': 'inactive'}
+2025-01-23 12:39:10.438 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 137: The process for Joe is currently active.', 'author': 'Joe', 'timestamp': '2025-01-23T18:39:10Z', 'status': 'active'}
+2025-01-23 12:39:12.450 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 138: The process for Charlie is currently active.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:39:12Z', 'status': 'active'}
+2025-01-23 12:39:14.461 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 139: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:39:14Z', 'status': 'completed'}
+2025-01-23 12:39:16.469 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 140: The process for Kate is currently active.', 'author': 'Kate', 'timestamp': '2025-01-23T18:39:16Z', 'status': 'active'}
+2025-01-23 12:39:18.478 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 141: The process for Joe is currently inactive.', 'author': 'Joe', 'timestamp': '2025-01-23T18:39:18Z', 'status': 'inactive'}
+2025-01-23 12:39:20.484 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 142: The process for Kate is currently pending.', 'author': 'Kate', 'timestamp': '2025-01-23T18:39:20Z', 'status': 'pending'}
+2025-01-23 12:39:22.496 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 143: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:39:22Z', 'status': 'completed'}
+2025-01-23 12:39:24.504 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 144: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:24Z', 'status': 'inactive'}
+2025-01-23 12:39:26.516 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 145: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:26Z', 'status': 'inactive'}
+2025-01-23 12:39:28.527 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 146: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:28Z', 'status': 'completed'}
+2025-01-23 12:39:30.537 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 147: The process for Charlie is currently pending.', 'author': 'Charlie', 'timestamp': '2025-01-23T18:39:30Z', 'status': 'pending'}
+2025-01-23 12:39:32.548 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 148: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:32Z', 'status': 'active'}
+2025-01-23 12:39:34.557 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 149: The process for Joe is currently completed.', 'author': 'Joe', 'timestamp': '2025-01-23T18:39:34Z', 'status': 'completed'}
+2025-01-23 12:39:36.568 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 150: The process for Joe is currently completed.', 'author': 'Joe', 'timestamp': '2025-01-23T18:39:36Z', 'status': 'completed'}
+2025-01-23 12:39:38.580 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 151: The process for Alice is currently pending.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:38Z', 'status': 'pending'}
+2025-01-23 12:39:40.592 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 152: The process for Kate is currently completed.', 'author': 'Kate', 'timestamp': '2025-01-23T18:39:40Z', 'status': 'completed'}
+2025-01-23 12:39:42.600 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 153: The process for Alice is currently inactive.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:42Z', 'status': 'inactive'}
+2025-01-23 12:39:44.607 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 154: The process for Alice is currently completed.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:44Z', 'status': 'completed'}
+2025-01-23 12:39:46.619 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 155: The process for Kate is currently active.', 'author': 'Kate', 'timestamp': '2025-01-23T18:39:46Z', 'status': 'active'}
+2025-01-23 12:39:48.630 | INFO     | __main__:main:82 - Sent message to topic 'unique_topic': {'message': 'Message 156: The process for Alice is currently active.', 'author': 'Alice', 'timestamp': '2025-01-23T18:39:48Z', 'status': 'active'}
